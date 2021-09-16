@@ -1,17 +1,17 @@
-import ExampleComponent from "./components/ExampleComponent.vue";
-import ExampleComponent2 from "./components/Component2.vue";
+import Bookables from "./bookables/Bookables.vue";
+import Bookable from "./bookable/Bookable";
 import VueRouter from "vue-router";
 
 const routes = [
     {
         path:"/",
-        component: ExampleComponent,
+        component: Bookables,
         name:  "home"
     },
     {
-        path:"/second",
-        component: ExampleComponent2,
-        name:  "second"
+        path: "/bookable/:id",
+        component: Bookable,
+        name: "bookable",
     }
 ]
 
